@@ -1,0 +1,12 @@
+.slds-notify_container {
+    --slds-c-toast-color-background: navy !important ;/* Does Not Work */
+}
+
+.slds-notify {
+    --slds-c-toast-color-background: navy !important ; /* Does Not Work */
+}
+
+.slds-notify_toast {
+    --slds-c-toast-color-background:navy !important ;
+     /* purple; Does Not Work */
+}

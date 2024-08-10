@@ -1,0 +1,35 @@
+<template>
+        <lightning-card  title="Standard Toast Components">
+           <lightning-combobox
+            name="variant"
+            label="variant"
+            value={variant}
+            placeholder="Select variant"
+            options={variantOptions}
+            onchange={handleVariantChange} ></lightning-combobox>
+             <lightning-combobox
+                 name="Position"
+                 label="Position"
+                 value={position}
+                 placeholder="Select Position"
+                 options={positionOptions}
+                 onchange={positionChange} >
+            </lightning-combobox>
+             <lightning-combobox
+                 name="Mode"
+                 label="Mode"
+                 value={mode}
+                 placeholder="Select Mode"
+                 options={modeOptions}
+                 onchange={handleModeChange} >
+            </lightning-combobox>
+            <p>Selected Mode is: {mode}</p>
+            <p>Selected position is: {position}</p>
+            <p>Selected variant is: {variant}</p>
+            <lightning-button variant="brand" 
+            label="Show Toast" 
+            title="Show Toast" 
+            onclick={showToast} 
+            class="slds-m-left_x-small"></lightning-button>
+        </lightning-card>
+</template>
